@@ -1,0 +1,71 @@
+// Mixins
+@mixin menu-pc ($fondo: rgba(#fff, 0.8), $marin: 10px 120px){
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: $marin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $fondo;
+    transition: 0.4s;
+
+}
+// Variables
+$carboazul: #0077b4;
+$azulOscuro: #003F80;
+// Generalidades
+*{
+   padding: 0; 
+   margin: 0; 
+   box-sizing: border-box;
+//    font-size: 20px;
+}
+body{
+    min-height: 200vh;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    // color: $carboazul;
+    text-decoration: none;
+}
+
+// Header
+header{
+    width: 100%;
+    font-size: 1.2rem;
+    
+    .menu-nav-pc{
+        @include menu-pc();
+        .logo img{
+            max-height: 55px;
+            transition: all 0.3s ease;
+        }
+        .menu-principal a{
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        a{
+            margin: 0 0.5rem;
+            color: $carboazul;
+        }
+    }
+    .stickyMenu{
+        @include menu-pc(rgba($carboazul, 1), 8px 120px);
+        .logo img{
+            max-height: 50px;
+            transition: all 0.3s ease;
+        }
+        a{
+            margin: 0 0.5rem;
+            color: #fff;
+        }
+        .menu-principal a{
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    }
+}
+

@@ -1,0 +1,49 @@
+// Variables
+$carboazul: #0077b4;
+$azulOscuro: #003F80;
+.banner{
+    position: relative;
+    width: 100%;
+    background-image: url(../img/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    border: none;
+    .container{
+        padding-top: 5%;
+        height: 100%;
+        margin: auto;
+        width: 1240px;
+        max-width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner-contenido{
+        width: 60%;
+        color: $carboazul;
+        text-align: left;
+        padding-right: 10px;
+        h2{
+            font-size: 2.5rem;
+            padding-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        p{
+            font-size: 1.5rem;
+            padding-bottom: 40px;
+        }
+        a{
+            width: 200px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            background: #FFF;
+            color: $carboazul;
+            text-transform: uppercase;
+        }
+    }
+    img{
+        width: 35%;
+    }
+}
