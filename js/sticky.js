@@ -16,7 +16,7 @@ const MET_STICKY = {
             PROP_STICKY.logoBanner.setAttribute('src', 'img/logoBlanco.png');
         } else{
             PROP_STICKY.navBar.className = 'menu-nav-pc'
-            PROP_STICKY.logoBanner.setAttribute('src', 'img/capa 1.png');
+            PROP_STICKY.logoBanner.setAttribute('src', 'img/capa1.png');
             // PROP_STICKY.logoBanner.style.width = '120px';
         }
 
