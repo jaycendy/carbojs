@@ -3,11 +3,17 @@ $carboazul: #0077b4;
 $azulOscuro: #003F80;
 
 .portafolio{
-    margin-top: 50px;
+    margin-top: 30px;
     width: 100%;
     background: #FFF;
+    .titulo{
+        text-align: center;
+        color: $carboazul;
+        font-size: 1.5rem;
+        text-align: center;
+    }
     .container{
-        padding-top: 50px;
+        padding-top: 30px;
         max-width: 1240px;
         margin: auto;
         display: flex;
@@ -79,6 +85,7 @@ $azulOscuro: #003F80;
             flex-flow: row wrap;
             justify-content: space-around;
             .texto{
+                cursor: pointer;
                 width: 240px;
                 padding: 10px 20px;
                 padding-bottom: 20px;
@@ -94,6 +101,10 @@ $azulOscuro: #003F80;
                     padding-top: 10px;
                     font-size: 1rem;
                     // color: grey;
+                }
+                &:hover{
+                    box-shadow: 2px 2px 5px $carboazul;
+                    background: linear-gradient(to right, $carboazul, $azulOscuro);
                 }
             }
             @media (max-width: 1239px) {

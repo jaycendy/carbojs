@@ -115,11 +115,18 @@ header .stickyMenu .menu-principal a {
   width: 35%;
 }
 
+.lightboxsrc .titulo {
+  padding-top: 30px;
+  text-align: center;
+  color: #0077b4;
+  font-size: 1.5rem;
+  text-align: center;
+}
 .lightboxsrc .container {
   width: 1240px;
   max-width: 90%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   border: 1px solid #0077b4;
 }
@@ -223,12 +230,18 @@ header .stickyMenu .menu-principal a {
 }
 
 .portafolio {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%;
   background: #FFF;
 }
+.portafolio .titulo {
+  text-align: center;
+  color: #0077b4;
+  font-size: 1.5rem;
+  text-align: center;
+}
 .portafolio .container {
-  padding-top: 50px;
+  padding-top: 30px;
   max-width: 1240px;
   margin: auto;
   display: flex;
@@ -305,6 +318,7 @@ header .stickyMenu .menu-principal a {
   justify-content: space-around;
 }
 .portafolio .container .textoPortafolio .texto {
+  cursor: pointer;
   width: 240px;
   padding: 10px 20px;
   padding-bottom: 20px;
@@ -319,6 +333,10 @@ header .stickyMenu .menu-principal a {
 .portafolio .container .textoPortafolio .texto p {
   padding-top: 10px;
   font-size: 1rem;
+}
+.portafolio .container .textoPortafolio .texto:hover {
+  box-shadow: 2px 2px 5px #0077b4;
+  background: linear-gradient(to right, #0077b4, #003F80);
 }
 @media (max-width: 1239px) {
   .portafolio .container .textoPortafolio {
@@ -352,7 +370,7 @@ header .stickyMenu .menu-principal a {
   margin: auto;
 }
 .novedades .container .nov-titulo {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 20px;
   color: #FFF;
   font-size: 1.5rem;
